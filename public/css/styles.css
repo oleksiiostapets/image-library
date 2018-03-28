@@ -1,0 +1,32 @@
+.pagination {
+    display: inline-flex;
+}
+.page-item.active .page-link {
+    z-index: 0;
+}
+
+.thumb {
+    float:left;
+    position:relative;
+    margin:3px;
+}
+.preview {
+    border:1px solid #000;
+    vertical-align:bottom;
+}
+.thumb:hover {
+    border:0;
+    z-index:1;
+}
+.thumb div {
+    background-color: #eee;
+    border: 3px solid #eee;
+    border-radius: 3px;
+    position:absolute;
+    visibility:hidden;
+    padding: 5px;
+}
+.thumb:hover div {
+    visibility:visible;
+    top:37px; left:37px;
+}
